@@ -1,0 +1,189 @@
+// users
+{
+  "ID": "String Unique Auto Increment",
+  "userName": "String Unique",
+  "user": "String Unique",
+  "password": "String"
+}
+
+// builds
+{
+  "ID": "String Unique Auto Increment",
+  "userID": "String Refers userID from Users",
+  "cpu": "String Refers productID from cpus",
+  "motherboard": "String Refers productID from motherboards",
+  "ram": "String Refers productID from rams",
+  "gpu": "String Refers productID from gpus",
+  "storage": "String Refers productID from storages".
+  "psu": "String Refers productID from psus"
+}
+
+// cpuRatings
+{
+  "userID": "String Refers userID from Users",
+  "ecosystem": "String Values(AMD | Intel | ALL)",
+  "class": "String Values(Entry | Mid | Pro | ALL)",
+  "C1 .. C(N)" : "Int"
+}
+
+// motherboardRatings
+{
+  "userID": "String Refers userID from Users",
+  "ecosystem": "String Values(AMD | Intel | ALL)",
+  "class": "String Values(Entry | Mid | Pro | ALL)",
+  "M1 .. M(N)" : "Int"
+}
+
+// ramRatings
+{
+  "userID": "String Refers userID from Users",
+  "class": "String Values(Entry | Mid | Pro | ALL)",
+  "R1 .. R(N)" : "Int"
+}
+
+// gfxRatings
+{
+  "userID": "String Refers userID from Users",
+  "class": "String Values(Entry | Mid | Pro | ALL)",
+  "C1 .. C(N)" : "Int"
+}
+
+// psuRatings
+{
+  "userID": "String Refers userID from Users",
+  "class": "String Values(Entry | Mid | Pro | ALL)",
+  "C1 .. C(N)" : "Int"
+}
+
+// storageRatings
+{
+  "userID": "String Refers userID from Users",
+  "class": "String Values(Entry | Mid | Pro | ALL)",
+  "C1 .. C(N)" : "Int"
+}
+
+// cpus
+{
+  "ID": "String Unique Auto Increment",
+  "ProductID": "String Unique",
+  "Name": "String",
+  "Manufacturer": "String",
+  "Microarchitecture": "String",
+  "Core Family": "String",
+  "Core Count": "Int",
+  "No of Threads": "Int",
+  "Multithreading": "String",
+  "Core Clock": "Int",
+  "Boost Clock": "Int",
+  "TDP": "Int",
+  "Socket": "String",
+  "Integrated Graphics": "String Values(Yes | No)",
+  "Lithography": "Int",
+  "Class": "String Values(ENTRY | MID | PRO)"
+}
+
+//rams
+{
+  "ID": "String Unique Auto Increment",
+  "Name": "String",
+	"Manufacturer": "String",
+  "Type": "String",
+	"Speed": "Int"
+  "Timings": "String",
+  "CAS": "Int",
+  "Latency":	"Int", 
+  "Voltage":	"Int",
+  "ECC": "String",
+  "Kit Capacity": "Int",
+  "Individual Capacity": "Int",
+  "Modules": "Int",	
+  "Heat Spreader": "String",
+  "Class": "String Values(ENTRY | MID | PRO)"
+}
+
+// psus
+{
+  "ID": "String Unique Auto Increment",
+  "ProductID": "String Unique",
+  "Name": "String",
+  "Model": "String",
+  "Manufacturer": "String",
+  "Type": "String",
+  "Max Power": "Int",
+  "Modular": "String",
+  "Energy Rating": "String",
+  "Class": "String Values(ENTRY | MID | PRO)"
+}
+
+//storages
+{
+  "ID": "String Unique Auto Increment",
+  "Name":	"String",
+  "Manufacturer":	"String",
+  "Type":	"String",
+  "Model":	"String",
+  "Interface": "String",
+  "Capacity": "String",
+  "RPM": "Int",
+  "Cache": "Int",
+  "Form Factor": "String",
+  "Memory": "String",
+  "Components": "String",
+  "Class": "String Values(ENTRY | MID | PRO)"
+}
+
+
+//gfx
+{
+  "ID": "String Unique Auto Increment",
+  "Name":	"String",
+  "Manufacturer":	"String",
+  "Model":	"String",
+  "Interface": "String",
+  "Chipset": "String",
+  "Manufacturer":	"String",
+  "GPU":	"String",
+  "Core Clock(Mhz)": "Int",
+  "Boost Clock(Mhz)":	"Int",
+  "CUDA": "Int",
+  "Effective Memory Clock(Mhz)":	"Int",
+  "Memory Interface Width":	"Int",
+  "Memory Size (GB)":	"Int",
+  "Memory Type":	"String",
+  "HDMI":	"Int",
+  "DisplayPort":	"Int",
+  "DVI-D Dual-Link":	"Int",
+  "TDP (W)":"Int",
+  "Class": "String Values(ENTRY | MID | PRO)"
+}
+
+//motherboards
+{
+  "ID": "String Unique Auto Increment",
+  "Name":	"String",
+  "Manufacturer":	"String",
+  "Socket":	"String",
+  "Form Factor":	"String",
+  "Chipset":	"String",
+  "Memory Max":	"Int",
+  "Memory Type":	"String",
+  "Memory Slots":	"Int",
+  "Memory Speed":	"Int",
+  "PCI-E x16 Slots":	"Int",
+  "PCI-E x8 Slots":	"Int",
+  "PCI-E x4 Slots":	"Int",
+  "PCI-E x1 Slots":	"Int",
+  "PCI Slots":	"Int",
+  "M.2 Slots":	"String",
+  "mSATA Slots":	"Int",
+  "Onboard Ethernet":	"String",
+  "SATA 6 Gb/s": "Int",
+  "Onboard Video":	"String",
+  "USB 2.0":	"Int",
+  "USB 3.2 Gen 1":	"Int",
+  "USB 3.2 Gen 2x2":	"Int",
+  "Supports ECC":	"String",
+  "Wireless Networking":	"String",
+  "RAID Support": "String",
+  "Class": "String Values(ENTRY | MID | PRO)"
+}

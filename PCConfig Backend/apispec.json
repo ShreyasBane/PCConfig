@@ -1,0 +1,53 @@
+---GET---
+
+// get product by type
+/api/products/{cpu|gpu...}
+// get a specific product 
+/api/products/cpu/{id}
+// get filtered
+/api/products/{producttype}/filter
+
+// RECOMMENDATIONS
+// get recommendation
+/api/products/{userid}/{cpu|gpu...}
+// get filtered
+/api/products/{{userid}/producttype}/filter
+
+// all builds
+/api/{userid}/builds
+// specific build
+/api/{userid}/builds/{listid}
+// get user info
+/api/user/{userid}
+
+---POST---
+/api/login
+{
+  user: something,
+  password: something
+}
+{
+  status: success | error
+  message: "sensible message"
+}
+
+/api/signup
+{
+  user: something,
+  password: something
+}
+{
+  status: success | error,
+  message: "sensible message",
+  data: {
+  }
+}
+
+// set user info
+/api/user/{userid}
+// specific build save
+/api/{userid}/builds/{listid}
+//add component
+/api/{userid}/builds/{listid}/add/{id}
+//remove component
+/api/{userid}/builds/{listid}/remove/{id}
